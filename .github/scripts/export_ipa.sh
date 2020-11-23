@@ -1,7 +1,7 @@
 set -eo pipefail
 
 xcodebuild -archivePath $PWD/build/GitHubTest.xcarchive \
-            -exportOptionsPlist ./.github/secrets/ExportOptions.plist \
+            -exportOptionsPlist ./.github/scripts/ExportOptions.plist \
             -exportPath $PWD/build \
             -allowProvisioningUpdates \
             -exportArchive | xcpretty
