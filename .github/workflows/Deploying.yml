@@ -21,5 +21,5 @@ jobs:
         run: ./.github/scripts/archive_app.sh
       - name: Exporting .ipa
         run: ./.github/scripts/export_ipa.sh
-        if: success()
-        run: ./.github/scripts/publish_fir.sh
+#        if: success()
+#        run: ./.github/scripts/publish_fir.sh
