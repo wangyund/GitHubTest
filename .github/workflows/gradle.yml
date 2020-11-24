@@ -14,8 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set environment variables from project settings
-        run: |
-          exec .github/scripts/set-env-from-xcodeproj.sh
+        #run: |
+        #  exec .github/scripts/set-env-from-xcodeproj.sh
+        env:
+          PRODUCT_NAME: GitHubTest
       - name: Import signing certificate
         env:
           SIGNING_CERTIFICATE_P12_DATA: ${{ secrets.SIGNING_CERTIFICATE_P12_DATA }}
