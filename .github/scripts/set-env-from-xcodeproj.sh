@@ -7,3 +7,5 @@
 #echo "::set-env name=PRODUCT_NAME::$PRODUCT_NAME"
 
 export PRODUCT_NAME=GitHubTest
+
+sudo gem install fastlane
