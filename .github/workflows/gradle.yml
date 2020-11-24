@@ -35,8 +35,8 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: build.log
-          path: ~/Library/Logs/gym/*.log
+          name: GitHubTest.ipa
+          path: ${{ env.PRODUCT_NAME }}.ipa
 
       - name: Upload release assets
         if: startsWith(github.ref, 'refs/tags/v')
