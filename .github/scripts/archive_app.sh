@@ -1,8 +1,8 @@
 set -eo pipefail
 
-xcodebuild -workspace GitHubTest.xcodeproj \
-            -scheme GitHubTest\
-            -sdk iphoneos \
-            -configuration AppStoreDistribution \
-            -archivePath $PWD/build/GitHubTest.xcarchive \
-            clean archive | xcpretty
+# 获取当前路径
+workdir=$(pwd)
+## cd  到程序路径
+cd $workdir
+
+xcodebuild -workspace GitHubTest.xcodeproj -scheme GitHubTest -configuration Release clean
