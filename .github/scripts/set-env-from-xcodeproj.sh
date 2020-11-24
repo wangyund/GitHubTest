@@ -6,4 +6,4 @@
 #PRODUCT_NAME="$(xcodebuild -scheme "$SCHEME" -showBuildSettings | grep " PRODUCT_NAME " | sed "s/[ ]*PRODUCT_NAME = //")"
 #echo "::set-env name=PRODUCT_NAME::$PRODUCT_NAME"
 
-echo $PRODUCT_NAME = "GitHubTest"
+export PRODUCT_NAME=GitHubTest
