@@ -12,10 +12,6 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
-        
-      - name: set decrypt_secrets.sh
-        run: |
-          exec .github/scripts/decrypt_secrets.sh
           
       - name: Set environment variables from project settings
         run: |
