@@ -45,8 +45,7 @@ jobs:
           files: |
             ${{ env.PRODUCT_NAME }}.ipa
             ${{ env.PRODUCT_NAME }}.app.dSYM.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            
 
       - name: Upload release assets 1
         uses: actions/upload-artifact@v2
