@@ -1,3 +1,3 @@
 set -eo pipefail
 
-xcodebuild -workspace GitHubTest.xcodeproj -scheme GitHubTest -configuration Release clean
+xcodebuild -workspace GitHubTest.xcworkspace -scheme GitHubTest -configuration Release clean
