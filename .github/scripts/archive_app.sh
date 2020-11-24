@@ -1,6 +1,6 @@
 set -eo pipefail
 
-xcodebuild -workspace GitHubTest.xcodeproj \
+xcodebuild archive -workspace GitHubTest.xcodeproj \
             -scheme GitHubTest\
             -sdk iphoneos \
             -configuration AppStoreDistribution \
